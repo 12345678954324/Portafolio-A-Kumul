@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-*{
-    margin: auto; 
+
+* {
+    margin: auto;
 }
+
 header {
     background: rgb(0, 102, 128);
     text-align: center;
@@ -12,17 +14,84 @@ header {
 }
 
 p {
-    color: #44329e;
+    color: #203083;
 }
 
 #foto-perfil {
     width: 300px;
     border-radius: 20px;
-    float:right;
+    float: right;
 }
-h1{
+
+h1 {
     font-family: "Bebas Neue", sans-serif;
     font-size: 50px;
 }
-h1{
-font-family: "Bebas Neue", sans-serif;}
+
+h1 {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+main {
+    overflow: hidden;
+}
+
+section {
+    overflow: hidden;
+}
+
+.proyecto {
+    width: 33%;
+    float: left;
+    margin-top: 20px;
+}
+
+.proyecto img {
+    width: 90%;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+#proyectos {
+    padding: 20px 30px;
+    border-top: solid 5px #44329e;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.proyecto p {
+    text-align: justify;
+    padding: 10px 5px;
+    color: #000;
+
+}
+.proyecto h3{
+    color: #051537;
+    font-weight: bolder;
+}
+#habilidades{
+    overflow: hidden;
+    padding: 20px;
+    padding-bottom: 20px;
+    border-top: solid 5px #6a6a6c;
+    margin-bottom:30px ;
+}
+progress{
+    width: 100%;
+    height: 25px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.lista-tecnologias{
+    list-style: none;
+    display: grid;
+    margin-left: 0;
+    gap: 15px;
+}
+.lista-tecnologias li{
+    background-color: #4a6398;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-align: center;
+}
