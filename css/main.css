@@ -147,12 +147,23 @@ progress {
 .campos label{
     padding-right: 20px;
 }
-.campos input{
+.campos input,select{
     padding: 10px;
     border: solid 2px #190156;
     width: 50%;
     font-size: 20px;
     border-radius: 10px;
+}
+.campos button{
+    background-color: #051537;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    padding:  20px 30x;
+    border: none;
+}
+.campos .opciones{
+    width: 20px;
 }
 
 footer {
