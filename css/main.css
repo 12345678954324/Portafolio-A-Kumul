@@ -1,176 +1,211 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap');
 
 * {
-    margin: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  font-family: "Montserrat", sans-serif;
+  background-color: #f4f7fb;
+  color: #222;
+  line-height: 1.6;
 }
 
+/* HEADER */
 header {
-    background: rgb(0, 102, 128);
-    text-align: center;
-    margin-bottom: 20px;
-    border-bottom: #051537 solid 3px;
-    padding: 50px;
+  background: linear-gradient(135deg, #004b70, #0085a1);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  border-bottom: 4px solid #051537;
 }
 
-.bi {
-    color: #06090f;
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-p {
-    color: #040404;
+header h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+header h4 {
+  font-weight: 400;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffd700;
+}
+
+/* NAV */
+nav {
+  background-color: #10264e;
 }
 
 #menu-principal {
-    list-style-type: none;
-    display: flex;
-}
-
-nav {
-    overflow: hidden;
-    padding: 20px 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 15px 0;
 }
 
 #menu-principal a {
-    text-decoration: none;
-    color: #203083;
-    font-size: 16px;
-    font-weight: bolder;
-    padding: 8ppx;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
 }
 
 #menu-principal a:hover {
-    color: #ffffff;
-    background-color: blueviolet;
+  color: #ffd700;
+}
+
+/* SECCIONES */
+main {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* SOBRE MÍ */
+.presentacion {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
 }
 
 #foto-perfil {
-    width: 300px;
-    border-radius: 20px;
-    float: right;
+  width: 250px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-h1 {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 50px;
-}
-
-h1 {
-    font-family: "Bebas Neue", sans-serif;
-}
-
-main {
-    overflow: hidden;
-}
-
-section {
-    overflow: hidden;
-}
-
-.proyecto {
-    width: 33%;
-    margin-top: 20px;
-}
-
-.proyecto img {
-    width: 90%;
-    border-radius: 15px;
-    margin-top: 10px;
-}
-
+/* PROYECTOS */
 #proyectos {
-    padding: 20px 30px;
-    border-top: solid 5px #44329e;
-    margin-top: 30px;
-    text-align: center;
+  text-align: center;
+  margin-top: 60px;
+  border-top: 4px solid #10264e;
+  padding-top: 40px;
 }
 
 #lista-proyectos {
-    display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
 }
 
-.proyecto p {
-    text-align: justify;
-    padding: 10px 5px;
-    color: #000;
-
+.proyecto {
+  width: 300px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 15px;
+  transition: 0.3s;
 }
 
-.proyecto h3 {
-    color: #051537;
-    font-weight: bolder;
+.proyecto:hover {
+  transform: translateY(-8px);
 }
 
+.proyecto img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* HABILIDADES */
 #habilidades {
-    overflow: hidden;
-    padding: 20px;
-    padding-bottom: 20px;
-    border-top: solid 5px #6a6a6c;
-    margin-bottom: 30px;
-}
-
-progress {
-    width: 100%;
-    height: 25px;
-    border-radius: 5px;
-    margin: 10px 0;
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 4px solid #4a6398;
 }
 
 .lista-tecnologias {
-    list-style: none;
-    display: flex;
-    margin-left: 0;
-    gap: 15px;
-
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
 }
 
 .lista-tecnologias li {
-    background-color: #4a6398;
-    color: #ffffff;
-    padding: 12px 20px;
-    border-radius: 25px;
-    text-align: center;
-}
-#contactos{
-    padding: 40px;
-    
-}
-.campos{
-    width: 70%;
-    clear: both;
-    font-size: 20px;
-}
-.campos label{
-    padding-right: 20px;
-}
-.campos input,select{
-    padding: 10px;
-    border: solid 2px #190156;
-    width: 50%;
-    font-size: 20px;
-    border-radius: 10px;
-}
-.campos button{
-    background-color: #051537;
-    color: white;
-    border-radius: 10px;
-    font-size: 18px;
-    padding:  20px 30x;
-    border: none;
-}
-.campos .opciones{
-    width: 20px;
+  background-color: #4a6398;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
 }
 
+progress {
+  width: 100%;
+  height: 20px;
+  border-radius: 10px;
+}
+
+/* FORMULARIO */
+#contactos {
+  margin-top: 60px;
+  padding: 40px;
+  background-color: #e8ecf5;
+  border-radius: 15px;
+}
+
+.campos {
+  margin-bottom: 20px;
+}
+
+.campos label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.campos input,
+.campos select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #10264e;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.campos button {
+  background-color: #10264e;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.campos button:hover {
+  background-color: #1b3f8b;
+}
+
+/* FOOTER */
 footer {
-    overflow: hidden;
-    padding: 40px 0;
-    background-color: rgb(17, 67, 165);
-    text-align: center;
-    border-top: solid 2px #190156;
-
+  background-color: #0c1c3a;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 60px;
+  font-size: 0.9rem;
 }
